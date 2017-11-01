@@ -34,7 +34,7 @@ During such reduction the given array is splitted into several
 chunks with total chunks number equal to concurrency level (it is
 the first arg to `.concurrent()`).
 That chunks are reduced in parallel. That means that we need a
-`combine` function to assembel results from that independent reductions
+`combine` function to assemble results from that independent reductions
 (third arg). We also need some sort of `unit` value to seed our
 reductions (second arg). But we can omit `unit` and `combine`
 if we only interested in side effects:
